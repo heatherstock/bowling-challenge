@@ -1,3 +1,4 @@
+/*
 'use strict';
 
 describe('Game', function() {
@@ -70,3 +71,4 @@ describe('Game', function() {
   });
 
 });
+*/

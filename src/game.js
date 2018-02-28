@@ -1,3 +1,4 @@
+/*
 'use strict';
 
 function Game() {
@@ -47,3 +48,4 @@ Game.prototype.score = function() {
   }
   return this.result;
 };
+*/
