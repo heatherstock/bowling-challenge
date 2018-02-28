@@ -15,6 +15,23 @@ describe('Game', function() {
     game.roll(5);
     expect(game.getCurrentScore()).toEqual(5);
   });
+
+  it('can roll a gutter game', function() {
+    completeGame(0, 20);
+    expect(game.getCurrentScore()).toBe(0);
+  });
+
+  it('can roll a game of ones', function () {
+    completeGame(1, 20);
+    expect(game.getCurrentScore()).toBe(20);
+  });
+
+  var completeGame = function(pins, rolls) {
+    for (var i = 0; i < rolls; i++) {
+      game.roll(pins);
+    };
+  };
+  
 });
 
   
