@@ -1,3 +1,33 @@
+'use strict';
+
+describe('Game', function() {
+  var game;
+
+  beforeEach(function(){
+    game = new Game();
+  });
+
+  it('has a starting score of zero', function() {
+    expect(game.getCurrentScore()).toEqual(0);
+  });
+
+  it('can score points by number of fallen pins', function(){
+    game.roll(5);
+    expect(game.getCurrentScore()).toEqual(5);
+  });
+});
+
+  
+
+
+
+
+
+
+
+
+
+
 /*
 'use strict';
 
