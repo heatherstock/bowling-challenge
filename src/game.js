@@ -3,7 +3,6 @@
 function Game() {
   this.currentScore = 0;
   this.rolls = [];
-  var rollIndex = 0;
 };
 
 Game.prototype = {
