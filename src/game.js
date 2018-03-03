@@ -38,16 +38,17 @@ getCurrentScore: function() {
   
     for (var frameIndex = 0; frameIndex < 10; frameIndex++) {
         if (isStrike()) {
-          this.result += getStrikeScore();
+          this.currentScore += getStrikeScore();
           rollIndex++;
         } else if (isSpare()) {
-          this.result += getSpareScore();
+          this.currentScore += getSpareScore();
           rollIndex += 2;
         } else {
-        this.result += getNormalScore();
+        this.currentScore += getNormalScore();
         rollIndex += 2;
         }
     }
-    return this.result;
+    return this.currentScore;
   }
 }
+

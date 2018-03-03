@@ -7,11 +7,6 @@ describe('Game', function() {
     game = new Game();
   });
 
-  it('can score points by number of fallen pins', function(){
-    game.roll(5);
-    expect(game.getCurrentScore()).toBe(5);
-  });
-
   it('can roll a gutter game', function() {
     completeGame(0, 20);
     expect(game.getCurrentScore()).toBe(0);
